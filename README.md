@@ -18,20 +18,28 @@ This project uses **Cypress** with the **Page Object Model (POM)** pattern to te
 
 ## How to Run the Tests
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+
+### 2. Install Dependencies
 
 Make sure Node.js and npm are installed. Then, install Cypress:
 ```npm install```
 
 If Cypress is not yet installed:
-```npm install cypress```
+```npm install cypress --save-dev```
 
-### 2. Open Cypress Test Runner (GUI)
+### 3. Open Cypress Test Runner (GUI)
 ```npx cypress open```
 Then select E2E Testing, choose your browser, and run simple_calculator.cy.js.
 
-### 3. Run Tests in Headless Mode (CLI)
+### 4. Run Tests in Headless Mode (CLI)
 ```npx cypress run --spec "cypress/e2e/simple_calculator.cy.js"```
 
 This runs the test in headless mode using Electron (default), or you can specify a browser:
 ```npx cypress run --browser chrome```
+
+---
+
+## Test Suite and Bug Report
+Test Suite: https://docs.google.com/spreadsheets/d/1u4JKN4Dn_ZAwtTnMKO-qO8tB14o8O_qRH9OUW0O6utU/edit?usp=sharing
+Bug Report: https://docs.google.com/spreadsheets/d/14cNC2rEpfCJAKjSQhqI3mV1knAbBm_IBoBFGF0e9Dmk/edit?usp=sharing
